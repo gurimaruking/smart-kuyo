@@ -1,0 +1,133 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- ===== りん棒（ばち）- 後ろレイヤー、斜めに置かれている ===== -->
+    <!-- 棒本体（メープル色の木製、丸みのある棒） -->
+    <path
+        android:fillColor="#D4A56A"
+        android:pathData="M 22,170 Q 24,166 130,138 Q 134,137 136,140 Q 136,144 30,172 Q 26,174 22,170 Z" />
+    <!-- 棒のハイライト -->
+    <path
+        android:fillColor="#E2BF8A"
+        android:pathData="M 28,168 Q 30,166 126,140 Q 128,140 128,141 Q 128,142 32,168 Q 30,169 28,168 Z" />
+    <!-- 先端の白い打撃部（布巻き） -->
+    <path
+        android:fillColor="#F5F0E6"
+        android:pathData="M 14,178 A 10,10 0 1,1 34,174 A 10,10 0 1,1 14,178 Z" />
+    <!-- 先端のハイライト -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 18,174 A 6,5 0 1,1 28,172 A 6,5 0 1,1 18,174 Z" />
+    <!-- 先端の影 -->
+    <path
+        android:fillColor="#E0D8C8"
+        android:pathData="M 20,180 A 7,4 0 1,1 32,178 A 7,4 0 1,1 20,180 Z" />
+
+    <!-- ===== りん台（六角形の黒い台）===== -->
+    <!-- 台の上面（楕円形） -->
+    <path
+        android:fillColor="#2A1810"
+        android:pathData="M 48,142 Q 48,134 100,130 Q 152,134 152,142 Q 152,150 100,154 Q 48,150 48,142 Z" />
+    <!-- 台の上面ハイライト -->
+    <path
+        android:fillColor="#3D2820"
+        android:pathData="M 52,141 Q 52,136 100,132 Q 148,136 148,141 Q 148,146 100,150 Q 52,146 52,141 Z" />
+    <!-- 台の側面 -->
+    <path
+        android:fillColor="#1E1008"
+        android:pathData="M 48,142 L 48,160 Q 48,168 100,172 Q 152,168 152,160 L 152,142 Q 152,150 100,154 Q 48,150 48,142 Z" />
+    <!-- 台の側面ハイライト -->
+    <path
+        android:fillColor="#2A1810"
+        android:pathData="M 54,145 L 54,156 Q 56,160 72,162 L 72,149 Q 56,148 54,145 Z" />
+    <!-- 台の底面エッジ -->
+    <path
+        android:fillColor="#140A04"
+        android:pathData="M 48,158 Q 48,166 100,170 Q 152,166 152,158 Q 152,164 100,168 Q 48,164 48,158 Z" />
+
+    <!-- ===== りん布団（丸い紫色の座布団）===== -->
+    <!-- 座布団本体（紫の丸い座布団、少し潰れた楕円） -->
+    <path
+        android:fillColor="#5B2D7E"
+        android:pathData="M 38,120 Q 38,106 100,99 Q 162,106 162,120 Q 162,134 100,141 Q 38,134 38,120 Z" />
+    <!-- 座布団の暗い下部 -->
+    <path
+        android:fillColor="#4A2068"
+        android:pathData="M 42,126 Q 42,132 100,138 Q 158,132 158,126 Q 158,132 100,139 Q 42,133 42,126 Z" />
+    <!-- 座布団の上部ハイライト -->
+    <path
+        android:fillColor="#7040A0"
+        android:pathData="M 46,116 Q 46,108 100,102 Q 154,108 154,116 Q 154,122 100,126 Q 46,122 46,116 Z" />
+    <!-- 座布団の中央ハイライト（光沢） -->
+    <path
+        android:fillColor="#8050B0"
+        android:pathData="M 70,112 Q 72,108 100,105 Q 128,108 130,112 Q 128,116 100,118 Q 72,116 70,112 Z" />
+    <!-- 座布団の金糸の縁取り（上） -->
+    <path
+        android:fillColor="#C8A84E"
+        android:pathData="M 40,118 Q 40,107 100,100 Q 160,107 160,118 Q 160,108 100,101 Q 40,108 40,118 Z" />
+    <!-- 座布団の金糸の縁取り（下） -->
+    <path
+        android:fillColor="#C8A84E"
+        android:pathData="M 40,122 Q 40,133 100,140 Q 160,133 160,122 Q 160,132 100,139 Q 40,132 40,122 Z" />
+    <!-- 座布団の房（左） -->
+    <path
+        android:fillColor="#C8A84E"
+        android:pathData="M 44,120 L 36,126 L 34,132 L 36,134 L 40,128 L 44,122 Z" />
+    <!-- 座布団の房（右） -->
+    <path
+        android:fillColor="#C8A84E"
+        android:pathData="M 156,120 L 164,126 L 166,132 L 164,134 L 160,128 L 156,122 Z" />
+
+    <!-- ===== おりん本体（真鍮の椀型）===== -->
+    <!-- おりん外側ベース（金色の椀） -->
+    <path
+        android:fillColor="#B8860B"
+        android:pathData="M 52,108 Q 52,58 100,38 Q 148,58 148,108 Q 148,116 100,120 Q 52,116 52,108 Z" />
+    <!-- おりん外側の中間色 -->
+    <path
+        android:fillColor="#C9982E"
+        android:pathData="M 56,105 Q 56,62 100,42 Q 144,62 144,105 Q 144,112 100,116 Q 56,112 56,105 Z" />
+    <!-- おりん左側の反射光（明るいゴールド） -->
+    <path
+        android:fillColor="#DABA50"
+        android:pathData="M 62,98 Q 64,68 82,50 Q 70,65 66,90 Q 64,98 62,98 Z" />
+    <!-- おりん上部の強いハイライト -->
+    <path
+        android:fillColor="#E8D070"
+        android:pathData="M 76,54 Q 88,46 100,42 Q 90,48 80,58 Z" />
+    <!-- おりんの右側（やや暗い反射） -->
+    <path
+        android:fillColor="#A07010"
+        android:pathData="M 136,98 Q 134,72 120,52 Q 132,66 136,90 Q 138,98 136,98 Z" />
+
+    <!-- おりんの内側（暗い金色） -->
+    <path
+        android:fillColor="#6B4800"
+        android:pathData="M 60,100 Q 60,72 100,56 Q 140,72 140,100 Q 140,96 100,90 Q 60,96 60,100 Z" />
+    <!-- おりんの内側の影 -->
+    <path
+        android:fillColor="#4A3000"
+        android:pathData="M 66,94 Q 66,76 100,64 Q 134,76 134,94 Q 134,90 100,84 Q 66,90 66,94 Z" />
+    <!-- おりんの内側の奥の暗がり -->
+    <path
+        android:fillColor="#3A2400"
+        android:pathData="M 72,88 Q 74,78 100,70 Q 126,78 128,88 Q 126,84 100,80 Q 74,84 72,88 Z" />
+
+    <!-- おりんのリム（ふち・開口部の輪） -->
+    <path
+        android:fillColor="#D4A830"
+        android:pathData="M 52,108 Q 52,102 100,98 Q 148,102 148,108 Q 148,114 100,118 Q 52,114 52,108 Z" />
+    <!-- リムのハイライト（上部） -->
+    <path
+        android:fillColor="#E8C858"
+        android:pathData="M 56,106 Q 56,103 100,100 Q 144,103 144,106 Q 144,108 100,110 Q 56,108 56,106 Z" />
+    <!-- リムの下部（影） -->
+    <path
+        android:fillColor="#A08020"
+        android:pathData="M 56,110 Q 56,113 100,116 Q 144,113 144,110 Q 144,112 100,114 Q 56,112 56,110 Z" />
+
+</vector>

@@ -39,3 +39,23 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Android
+*.iml
+.gradle
+/local.properties
+/.idea
+/build
+/captures
+.externalNativeBuild
+.cxx
+/app/build
+/_ul
+
+# Claude
+.claude/
+
+# Temp files
+*.txt
+*.png
+!docs/**
