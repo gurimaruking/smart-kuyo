@@ -6,12 +6,17 @@ plugins {
     alias(libs.plugins.hilt)
 }
 
+val keystoreProps = java.util.Properties().apply {
+    val f = rootProject.file("keystore.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
+}
+
 android {
-    namespace = "com.example.smartkuyo"
+    namespace = "com.smartkuyo.app"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.smartkuyo"
+        applicationId = "com.smartkuyo.app"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -19,9 +24,20 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("../keystore/smartkuyo-release.jks")
+            storePassword = keystoreProps.getProperty("storePassword")
+            keyAlias = "smartkuyo"
+            keyPassword = keystoreProps.getProperty("keyPassword")
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
+            isShrinkResources = true
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

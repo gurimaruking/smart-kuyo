@@ -11,3 +11,12 @@ local.properties
 /app/build
 /_ul
 .claude/
+
+keystore/
+*.jks
+*.keystore
+*_err*.txt
+*_out*.txt
+.kotlin/
+
+keystore.properties
